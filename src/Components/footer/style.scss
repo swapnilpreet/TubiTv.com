@@ -1,0 +1,123 @@
+@import "../../minxins.scss";
+
+.footer {
+    background-color: var(--black3);
+    padding: 50px 0;
+    color: white;
+    position: relative;
+    .contentWrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menuItems {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+        @include md {
+            margin-bottom: 30px;
+            gap: 30px;
+        }
+        .menuItem {
+            transition: all ease 0.3s;
+            cursor: pointer;
+            font-size: 12px;
+            @include md {
+                font-size: 16px;
+            }
+            &:hover {
+                color: var(--pink);
+            }
+        }
+    }
+    .container-logo-icon{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        // border: 1px solid red;
+        .infoText {
+            border-bottom: 1px solid gray;
+            
+            @include md {
+                font-size: 14px;
+                // margin-bottom: 30px;
+            }
+        }
+    }
+    .socialIcons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-bottom: 1px solid gray;
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all ease 0.3s;
+            &:hover {
+                box-shadow: 0 0 0.625em var(--pink);
+                color: var(--pink);
+            }
+        }
+    }
+    .footer-info{
+        margin-top: 20px;
+        height: 300px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+        border-bottom: 1px solid grey;
+        ul{
+            margin: 12px 10px;
+            font-size: 12px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        li{
+            font-size: 11px;
+            padding: 5px 20px;
+            list-style-type: none; 
+            cursor: pointer;
+        }
+        @include ms {
+            grid-template-columns: repeat(2, 1fr);
+            // border: 1px solid blue;
+            height:400px ;
+            margin-bottom: 30px;
+        }
+        
+    }
+    .bottom-img{
+    //    border: 1px solid red;
+       margin-top: 10px;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       cursor: pointer;
+    }
+    .bottom-text{
+        text-align: center;
+        font-size: 12px;
+        color: grey;
+        p{
+            padding-top: 10px;
+            cursor: pointer;
+        }
+    }
+    h5{
+        text-align: center;
+        font-weight: 900;
+    }
+}
